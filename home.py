@@ -53,6 +53,8 @@ def main():
             self.send_header('Content-type','application/json')
             self.end_headers()
 
+    with HTTPServer(('', 8000), handler) as server:
+    server.serve_forever()
 
         
         

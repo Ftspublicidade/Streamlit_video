@@ -1,0 +1,6 @@
+[DEFAULT]
+user=ocid1.user.oc1..aaaaaaaaeogw4lumlwfm7qchrjxrndupyucbqllkwzuqpnqhsceasni3e6qa
+fingerprint=78:77:f8:5a:31:ce:79:12:63:ff:8f:13:9a:14:2e:3a
+tenancy=ocid1.tenancy.oc1..aaaaaaaakankmz2x3rclvsqfxvro7f6iar2cowvb6inb7pe5th7fmxthrigq
+region=sa-saopaulo-1
+key_file=oracleidentitycloudservice_FERNANDA.S.SANTOS-10-21-19-55.pem

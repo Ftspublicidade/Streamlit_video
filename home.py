@@ -1,12 +1,12 @@
-from time import sleep
+#from time import sleep
 import streamlit as st
 import pandas as pd
 import oci
-import pydub
-from pathlib import Path
-from datetime import date, datetime
+#import pydub
+#from pathlib import Path
+#from datetime import date, datetime
 import ocifs
-import json
+#import json
 
 def main():
     st.title("Faça Upload do seu arquivo de áudio")

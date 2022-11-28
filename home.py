@@ -42,7 +42,10 @@ def main():
         put_object_body = fileObject.getvalue(),
         content_type="video/mp4")
 
+
+def noti():
     
+    config = oci.config.from_file("config")
     ons_client = oci.ons.NotificationDataPlaneClient(config)
     
     get_subscription_response = ons_client.get_subscription(
@@ -52,13 +55,13 @@ def main():
     st.text("Arquivo:")
     st.write(get_subscription_response.data)
     
-    
+  
         
         
         
             
     
 
-if __name__ == '__main__':
-    main()
+main()
+noti()
 

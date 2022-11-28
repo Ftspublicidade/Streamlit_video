@@ -31,7 +31,7 @@ def main():
 
         
 
-        config = oci.config.from_file('config')
+        config = oci.config.from_file("config")
 
         object_storage_client = oci.object_storage.ObjectStorageClient(config)
 
@@ -42,7 +42,8 @@ def main():
         put_object_body = fileObject.getvalue(),
         content_type="video/mp4")
 
-    ons_client = oci.ons.NotificationDataPlaneClient('config')
+    
+    ons_client = oci.ons.NotificationDataPlaneClient(config)
     
     get_subscription_response = ons_client.get_subscription(
     subscription_id="ocid1.onssubscription.oc1.sa-saopaulo-1.aaaaaaaajeyrwy7mjh546cvyvmpso4m5tzkmrevwhvqyahhhxctzqtnf24va",

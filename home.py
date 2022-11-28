@@ -44,7 +44,7 @@ def main():
 
 
 def noti():
-    if main() is not None:
+    if main is not None:
         config = oci.config.from_file("config")
         ons_client = oci.ons.NotificationDataPlaneClient(config)
     

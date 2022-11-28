@@ -54,8 +54,6 @@ def main():
         st.write(get_subscription_response.data)
 
         
-        st.text("Arquivo:")
-        st.write(get_subscription_response.data)
     
   
         

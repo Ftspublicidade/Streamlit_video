@@ -9,7 +9,7 @@ import ocifs
 #import json
 
 def main():
-    st.title("Faça Upload do seu arquivo de áudio")
+    st.title("Faça Upload do seu arquivo de vídeo")
     #st.sidebar.image('oracle.png')
 
     fileObject = st.file_uploader(label = "Faça upload do seu arquivo aqui ", 

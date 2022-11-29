@@ -55,7 +55,7 @@ def main():
         #st.write(get_subscription_response.data)
 
         
-        r=requests.get("http://notification.sa-saopaulo-1.oci.oraclecloud.com)
+        r=requests.get("http://notification.sa-saopaulo-1.oci.oraclecloud.com")
         st.write(r.content)
   
         

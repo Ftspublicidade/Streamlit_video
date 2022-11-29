@@ -6,6 +6,7 @@ import oci
 #from pathlib import Path
 from datetime import date, datetime
 import ocifs
+import requests
 #import json
 
 def main():
@@ -42,19 +43,20 @@ def main():
         put_object_body = fileObject.getvalue(),
         content_type="video/mp4")
 
-        config1 = oci.config.from_file("config")
+        #config1 = oci.config.from_file("config")
     
-        ons_client = oci.ons.NotificationDataPlaneClient(config1)
+        #ons_client = oci.ons.NotificationDataPlaneClient(config1)
     
-        get_subscription_response = ons_client.get_subscription(
-        subscription_id="ocid1.onssubscription.oc1.sa-saopaulo-1.aaaaaaaajeyrwy7mjh546cvyvmpso4m5tzkmrevwhvqyahhhxctzqtnf24va",
-            )
+        #get_subscription_response = ons_client.get_subscription(
+        #subscription_id="ocid1.onssubscription.oc1.sa-saopaulo-1.aaaaaaaajeyrwy7mjh546cvyvmpso4m5tzkmrevwhvqyahhhxctzqtnf24va",
+            #)
 
-        st.text("Arquivo:")
-        st.write(get_subscription_response.data)
+        #st.text("Arquivo:")
+        #st.write(get_subscription_response.data)
 
         
-    
+        r=requests.get("http://notification.sa-saopaulo-1.oci.oraclecloud.com)
+        st.write(r.content)
   
         
         
